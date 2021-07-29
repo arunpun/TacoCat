@@ -25,9 +25,9 @@ function palindromeCheck(userString) {
     }
 
     if (revString == userString) {
-        returnObj.msg = "You entered a palindrome!";
+        returnObj.msg = "Well done, you entered a palindrome!";
     } else {
-        returnObj.msg = `${userString} is not a palindrome!`;
+        returnObj.msg = `Sorry, ${userString} is not a palindrome.`;
     }
 
     returnObj.reversed = revString;
