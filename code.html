@@ -141,15 +141,34 @@
                         <strong>
                             String.toLowerCase()</strong> method. Next, we have a regular expression,
                         <strong>regex</strong> to clear up
-                        the string further. The variable <strong>regex</strong> is defined as
-                        <strong>/[^a-z0-9]/gi</strong> I then used the <strong>String.replace(regex, "")</strong>
+                        the string further, this variable is defined as
+                        <strong>/[^a-z0-9]/gi</strong>. I then used the <strong>String.replace(regex, "")</strong>
                         method which replaces
-                        any numbers, special characters with <strong>""</strong>, blank which ensures that there are no
-                        invalid characters. Next, we have a <strong>reversedString</strong> array which will hold the
+                        any numbers, special characters with blanks, (<strong>""</strong>) and ensures that there are no
+                        invalid characters. Then, we have a <strong>reversedString</strong> array which will hold the
                         reversed
-                        user's input and an empty object defined as <strong>returnObj</strong> which will hold the two
-                        possible results
-                        to display to the user. In a decremental for loop </p>
+                        user's input and an empty object defined as <strong>returnObj</strong> which will hold the
+                        appropriate
+                        message and the reversed string to display to the user. In a decremental for loop, we start to
+                        loop from the last index of the
+                        user's input until
+                        the loop reaches the first index, <strong>0</strong>, decrementing the value of
+                        <strong>i</strong> by <strong>1
+                        </strong> on
+                        each loop. This loop stores the user's input in reverse in the <strong>reversedString</strong>
+                        variable. Now, we can check if the <strong>userString</strong> is the same as the
+                        <strong>reversedString</strong>,
+                        if the boolean expression evaluates to true, the message <strong>Well done, you entered a
+                            palindrome!</strong> is
+                        stored as a <strong>msg</strong> attribute in the <strong>returnObj</strong> object. Else, the
+                        message,
+                        <strong>`Sorry, ${userString} is not a palindrome`</strong> is stored in the
+                        <strong>msg</strong> attribute.
+                        Further to this, the reversed string itself is stored as <strong>reversed</strong> attribute in
+                        the
+                        <strong>returnObj</strong> object no matter the outcome of the boolean expression. Finally, this
+                        function
+                        returns the <strong>returnObj</strong> object.
                 </div>
             </div>
         </div>
