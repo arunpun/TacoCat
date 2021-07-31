@@ -155,7 +155,8 @@
                         the loop reaches the first index, <strong>0</strong>, decrementing the value of
                         <strong>i</strong> by <strong>1
                         </strong> on
-                        each loop. This loop stores the user's input in reverse in the <strong>reversedString</strong>
+                        each loop (<strong>i--</strong>). This loop stores the user's input in reverse in the
+                        <strong>reversedString</strong>
                         variable. Now, we can check if the <strong>userString</strong> is the same as the
                         <strong>reversedString</strong>,
                         if the boolean expression evaluates to true, the message <strong>Well done, you entered a
@@ -169,6 +170,30 @@
                         <strong>returnObj</strong> object no matter the outcome of the boolean expression. Finally, this
                         function
                         returns the <strong>returnObj</strong> object.
+                        <hr>
+                        <h5>displayMessage()</h5>
+                        <p>Now that we have the result, i.e. if the user's input is a palindrome or not, we can simply
+                            access the
+                            <strong>msg</strong> attribute in the <strong>returnObj</strong> object and pass that to the
+                            corresponding
+                            display element. In this case, the message is to be displayed in a <strong>h4</strong>
+                            element with
+                            the id of
+                            <strong>alertHeader</strong>. Underneath this <strong>h4</strong> tag, we have a
+                            <strong>p</strong> element
+                            with the id <strong>message</strong> which will display the user's input in reverse. These
+                            are achieved through
+                            similar methods, <strong>document.getElementById("alertHeader").innerHTML =
+                                returnObj.msg;</strong> &
+                            <strong>document.getElementById("message").innerHTML = `Your phrase reversed is
+                                ${returnObj.reversed}`;</strong> respectively.
+                            Finally, in order to display these messages to the user, we need to remove the class
+                            <strong>invisible</strong> from the <strong>div</strong> element with the id
+                            <strong>alert</strong>.
+                            This is done with the
+                            <strong>document.getElementById("alert").classList.remove("invisible");</strong>
+                            method.
+                        </p>
                 </div>
             </div>
         </div>
